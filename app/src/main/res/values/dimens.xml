@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="main_height">40dp</dimen>
+    <dimen name="main_size">20sp</dimen>
+    <dimen name="refresh_size">17sp</dimen>
+</resources>

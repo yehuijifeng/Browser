@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lh.baidu.BaiduActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/api_back_view"
+            android:layout_width="@dimen/main_height"
+            android:layout_height="@dimen/main_height"
+            android:background="@drawable/bg_main"
+            android:padding="5dp"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+        <TextView
+            android:id="@+id/api_refresh_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_main"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="刷新"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/refresh_size" />
+
+        <com.lh.baidu.AlwaysMarqueeTextView
+            android:id="@+id/api_title_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="百度"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/main_size" />
+        <TextView
+            android:id="@+id/api_index_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_main"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="首页"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/refresh_size" />
+        <ImageView
+            android:id="@+id/api_close_view"
+            android:layout_width="@dimen/main_height"
+            android:layout_height="@dimen/main_height"
+            android:background="@drawable/bg_main"
+            android:padding="5dp"
+            android:src="@drawable/abc_ic_clear_mtrl_alpha" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/api_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
